@@ -1,6 +1,6 @@
-"""
+
 Streamlit Credit Scoring Web App
--------------------------------
+
 Accepts Age, Income, Debt, Credit Score, Payment History and predicts creditworthiness
 using the trained model saved as `best_credit_model.pkl`.
 """
@@ -92,3 +92,4 @@ if st.button("Predict"):
         st.write("**Feature importances:**")
         for i in order:
             st.write(f"- {FEATURE_NAMES[i]}: {importances[i]:.3f}")
+
